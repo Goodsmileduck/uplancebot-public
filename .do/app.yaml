@@ -11,7 +11,7 @@ services:
     branch: main
     deploy_on_push: true
     repo: Goodsmileduck/uplancebot-public
-  name: mongo
+  name: uplancebot
 - dockerfile_path: mongo/Dockerfile
   github:
     branch: main
