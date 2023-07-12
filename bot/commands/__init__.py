@@ -9,6 +9,5 @@ def register_commands(bot):
     for cmd in ('start', 'stop', 'help', 'upwork_status_off', 'upwork_status_on'):
         bot.add_command('/{}'.format(cmd), getattr(base, cmd))
 
-    for cmd in ('add_feed', 'delete_feed', 'list_feeds', 'period',
-                'stats'):
+    for cmd in ('add_feed', 'delete_feed', 'list_feeds', 'period'):
         bot.add_command('/{}'.format(cmd), eval(cmd))

@@ -32,10 +32,13 @@ services:
   - key: DEBUG
     scope: RUN_AND_BUILD_TIME
     value: "True"
+  - key: BOT_TOKEN
+    scope: RUN_AND_BUILD_TIME
+    value: "BOT_TOKEN"
 - name: mongo
   image:
     registry_type: "DOCKER_HUB"
-    registry: https://hub.docker.com/
+    registry: ""
     repository: mongo
     tag: "4.0"
   instance_count: 1
