@@ -1,0 +1,20 @@
+alerts:
+- rule: DEPLOYMENT_FAILED
+- rule: DOMAIN_FAILED
+name: uplancebot-app
+region: sgp
+services:
+- dockerfile_path: Dockerfile
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: Goodsmileduck/uplancebot-public
+  name: mongo
+- dockerfile_path: mongo/Dockerfile
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: Goodsmileduck/uplancebot-public
+  name: mongo

@@ -1,0 +1,7 @@
+__pycache__
+*.env
+*.log
+.env
+*.sublime-*
+config/*.pem
+local_settings.py

@@ -1,0 +1,15 @@
+aiohttp==3.5.4
+aiosmtplib==1.0.2
+aiotg==1.0.0
+argh==0.26.2
+async-timeout==3.0.1
+chardet==3.0.4
+feedparser==5.2.1
+motor==2.0
+pathtools==0.1.2
+pymongo==3.8.0
+PyYAML==3.12
+envparse==0.2.0
+prometheus-async==19.2.0
+beautifulsoup4==4.11.0
+git+https://github.com/animeshxd/aiocfscrape@master#egg=aiocfscrape
