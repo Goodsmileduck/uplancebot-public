@@ -5,6 +5,14 @@ Add me in telegram: [Uplancebot]
 
 Set a feed url -> Get a messages with new jobs
 
+### How to deploy
+Prerequsites: docker, docker-compose
+
+1. Clone repo
+2. Create file inside cloned repo `bot.env` contains `BOT_TOKEN=<tg bot token>`
+3. Start containers with `docker-compose up -d`. 2 container will start (mongo and uplancebot)
+4. Check your bot, try adding new feeds
+
 ### Commands
 
 - /start - Start bot
